@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#121212] text-white font-sans;
+  @apply bg-neutral-900 text-white font-sans;
 }
 
 .budget-strip {
-  position: sticky; /* Keeps the strip fixed when it reaches the top */
-  top: 0;           /* The budget strip sticks at the top of the viewport */
-  width: 100%;      /* It takes the entire width of the screen */
-  z-index: 50;      /* Keeps the budget strip on top of other elements */
-  background: rgba(0, 0, 0, 0.8); /* Adjust the background color if needed */
-  padding: 10px 0;  /* Adds padding for better spacing */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
 }
 
 .budget-strip-background {
-  background-color: black;  /* Sets a fixed background color */
-  padding: 20px;            /* Adjust the padding as needed for spacing */
-  height: 100%;             /* Makes sure it covers the height */
+  background-color: black;
+  padding: 20px;
+  height: 100%;
 }
