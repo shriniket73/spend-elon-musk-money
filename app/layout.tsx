@@ -1,16 +1,14 @@
 import './globals.css';
+import { ReactNode } from 'react';
 
-export default function RootLayout({ children }) {
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body>
-        <div className="container mx-auto p-4">
-          <header className="text-center py-4">
-            <h1 className="text-4xl font-bold">Spend Elon Musk's Money</h1>
-          </header>
-          {children}
-        </div>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
