@@ -35,7 +35,7 @@ const items = [
     { name: 'ISRO Satellite Launch', price: 1500000000, image: '/images/ISRO-launch.webp' },
     { name: 'F1 Car', price: 1500000000, image: '/images/f1-car.png' },
     { name: 'Private Yacht', price: 1800000000, image: '/images/yacht.png' },
-    { name: 'Luxury Penthouse', price: 2000000000, image: '/images/penthouse-gurgaon.jpg' },
+    { name: 'Luxury Penthouse', price: 2000000000, image: '/images/penthouse.webp' },
     { name: 'Private Island', price: 3000000000, image: '/images/island.jpg' },
     { name: 'Luxury Cruise Ship', price: 4000000000, image: '/images/cruise-ship.png' },
     { name: 'Heritage Haveli', price: 4500000000, image: '/images/heritage-haveli.jpg' },
