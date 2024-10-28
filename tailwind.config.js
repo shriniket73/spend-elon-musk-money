@@ -7,8 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundColor: {
-        'black-alpha-80': 'rgba(0, 0, 0, 0.8)',
+      colors: {
+        background: 'var(--background)',
+        cardBackground: 'var(--cardBackground)',
       },
     },
   },

@@ -1,4 +1,17 @@
 {
-    "buildCommand": "npm install --legacy-peer-deps && npm run build"
-}
-  
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/next",
+        "config": {
+          "postcss": true,
+          "installCommand": "npm install --force"
+        }
+      }
+    ],
+    "build": {
+      "env": {
+        "NODE_OPTIONS": "--max_old_space_size=4096"
+      }
+    }
+  }

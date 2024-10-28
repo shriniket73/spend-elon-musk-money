@@ -9,6 +9,11 @@ const nextConfig = {
       },
     ],
   },
+  // Add this to ensure proper PostCSS processing
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false };
+    return config;
+  }
 }
 
 module.exports = nextConfig
