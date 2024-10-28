@@ -2,21 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-neutral-900 text-white font-sans;
+@layer base {
+  body {
+    @apply bg-neutral-900 text-white font-sans;
+  }
 }
 
-.budget-strip {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 50;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 10px 0;
-}
+@layer components {
+  .budget-strip {
+    @apply sticky top-0 w-full z-50 bg-black/80 py-2.5;
+  }
 
-.budget-strip-background {
-  background-color: black;
-  padding: 20px;
-  height: 100%;
+  .budget-strip-background {
+    @apply bg-black p-5 h-full;
+  }
 }
